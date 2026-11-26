@@ -21,6 +21,44 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Step 4.2: Limit main width */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Step 4.5: Specific style for profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Step 4.6: Paragraph padding set to 0 */
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+/* Step 4.3: Aside styling (width, margin, border, padding, background-color, color) */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 20%);
+    padding: 1rem;
+    background-color: #eeeeee;
+    color: #333333;
+    text-align: center;
+}
+
+/* Step 4.4: Image inside aside (width: 200px, height: auto) */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Step 4.7: Footer top margin, top border, and centered text */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000000;
+    text-align: center;
 }
