@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --secondary-color: #eeeeee;
@@ -46,6 +52,8 @@ main {
 main img {
     width: var(--img-width-sm);
     height: auto;
+    float: right;
+    margin: 0 0 var(--spacing-md) var(--spacing-md);
 }
 
 /* Step 4.6: Paragraph padding set to 0 */
@@ -53,15 +61,22 @@ p {
     padding: 0;
 }
 
-/* Step 4.3: Aside styling (width, margin, border, padding, background-color, color) */
+/* Step 4.3: Aside styling */
 aside {
+    position: relative;
     width: 20rem;
     margin: var(--spacing-md) auto;
-    border: 1px solid var(--border-subtle);
-    padding: var(--spacing-md);
-    background-color: var(--secondary-color);
-    color: var(--text-color);
     text-align: center;
+}
+
+/* Overlay heading on the aside image */
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-light);
+    text-shadow: 0 0 8px var(--border-dark);
 }
 
 /* Step 4.4: Image inside aside (width: 200px, height: auto) */
@@ -75,4 +90,13 @@ footer {
     margin-top: var(--spacing-lg);
     border-top: 1px solid var(--border-dark);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
