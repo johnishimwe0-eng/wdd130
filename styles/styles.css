@@ -18,19 +18,35 @@
     --img-width-lg: 200px;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: var(--text-light);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-light);
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 1px solid var(--border-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 img {
@@ -41,14 +57,18 @@ img {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-/* Step 4.2: Limit main width */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 840px;
-    margin: 0 auto;
+    grid-column: 2 / 3;
+    margin: 1rem;
     padding: var(--spacing-md);
 }
 
-/* Step 4.5: Specific style for profile image inside main */
+/* Specific style for profile image inside main */
 main img {
     width: var(--img-width-sm);
     height: auto;
@@ -56,13 +76,15 @@ main img {
     margin: 0 0 var(--spacing-md) var(--spacing-md);
 }
 
-/* Step 4.6: Paragraph padding set to 0 */
+/* Paragraph padding set to 0 */
 p {
     padding: 0;
 }
 
-/* Step 4.3: Aside styling */
+/* Aside styling */
 aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     position: relative;
     width: 20rem;
     margin: var(--spacing-md) auto;
@@ -79,13 +101,13 @@ aside h2 {
     text-shadow: 0 0 8px var(--border-dark);
 }
 
-/* Step 4.4: Image inside aside (width: 200px, height: auto) */
+/* Image inside aside */
 aside img {
     width: var(--img-width-lg);
     height: auto;
 }
 
-/* Step 4.7: Footer top margin, top border, and centered text */
+/* Footer top margin, top border, and centered text */
 footer {
     margin-top: var(--spacing-lg);
     border-top: 1px solid var(--border-dark);
