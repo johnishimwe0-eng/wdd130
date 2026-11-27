@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #222;
+    background-color: #fff;
+}
+
+header {
+    max-width: 650px;
+    margin: 1.5rem auto 1rem;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #05056b;
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background-color: #ececec;
+    border-radius: 0.4rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.quiz-item {
+    display: grid;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.q-num {
+    font-weight: 700;
+    color: #05056b;
+}
+
+.code-snippet {
+    justify-self: center;
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.25rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.65rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 0.25rem;
+    background-color: #05056b;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    background-color: #084c2e;
+}
+
+footer {
+    max-width: 650px;
+    margin: 1rem auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+}
